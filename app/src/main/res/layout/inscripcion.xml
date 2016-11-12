@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:baselineAligned="false"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="INSCRIPCIÓN UMB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textSize="24sp"
+        tools:textStyle="bold"
+        android:textAlignment="center"
+        android:fontFamily="serif" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="64dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <TextView
+        android:text="Nombre Completo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:textSize="18sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/txtNombreInsc" />
+
+    <TextView
+        android:text="Usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:textSize="18sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/txtUsuarioIngr" />
+
+    <TextView
+        android:text="Contraseña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView7"
+        android:textSize="18sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/txtContrasenaInsc" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtGuardadoInsc"
+        android:textStyle="normal|bold"
+        android:textAlignment="center" />
+
+    <Button
+        android:text="Guardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bntGuardarInsc"
+        android:layout_marginLeft="410px"
+        android:onClick="cargarDatos" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/logo"
+        android:id="@+id/imageView2" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="43dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <TextView
+        android:text="ATRAS"
+        android:layout_width="109dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtVieatrasInscr"
+        android:textStyle="normal|bold"
+        android:textSize="24sp"
+        android:onClick="onClickVoyaHome" />
+
+</LinearLayout>
